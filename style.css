@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #021626;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+}
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+}
+
+.square span{
+    display: none;
+}
+.square.clicked span{
+    display: block;
+}
+
+.square.even.clicked{
+    background-color: #3DC4B6;
+}
+.square.odd.clicked{
+    background-color: brown;
+}
